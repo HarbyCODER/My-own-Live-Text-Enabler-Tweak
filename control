@@ -1,0 +1,9 @@
+Package: com.local.livetextenabler
+Name: Live Text Enabler (RootHide)
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: Experimental Live Text capability override for older devices; iOS 16 behavior is not guaranteed.
+Maintainer: Local Build
+Author: Local Build
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate

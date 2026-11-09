@@ -1,0 +1,13 @@
+TARGET := iphone:clang:latest:15.0
+ARCHS = arm64 arm64e
+THEOS_PACKAGE_SCHEME = roothide
+
+include $(THEOS)/makefiles/common.mk
+
+TWEAK_NAME = LiveTextEnabler
+
+$(TWEAK_NAME)_FILES = Tweak.x
+$(TWEAK_NAME)_CFLAGS = -fobjc-arc
+$(TWEAK_NAME)_LIBRARIES = MobileGestalt
+
+include $(THEOS_MAKE_PATH)/tweak.mk
